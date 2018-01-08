@@ -15,6 +15,12 @@ Pascal (p35nguye)- Plan of Attack, UML Diagram, Keybinding DLC
 
 Compile using "make". Execute base game (without DLC) using "./cc3k".
 
+### SAMPLE IMAGES
+![start](https://github.com/msbukal/cc3k/blob/master/sample_images/1-start.JPG?raw=true)
+![spawn](https://github.com/msbukal/cc3k/blob/master/sample_images/2-spawn.JPG?raw=true)
+![attack](https://github.com/msbukal/cc3k/blob/master/sample_images/3-attack.JPG?raw=true)
+![death](https://github.com/msbukal/cc3k/blob/master/sample_images/4-death.JPG?raw=true)
+
 ### COMMANDS
 
 Game demands player race or quits (q or EOF). A valid race shortform will start game with that race.
