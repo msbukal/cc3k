@@ -11,17 +11,16 @@ Milena (msbukal)- Abstract superclasses: Subject, Character, Player, Enemy and P
 Pascal (p35nguye)- Plan of Attack, UML Diagram, Keybinding DLC
 
 # UML DIAGRAM
-![uml-diagram](https://github.com/msbukal/cc3k/blob/master/cc3k_UML.png?raw=true)
+![uml-diagram](/cc3k_UML.png)
 
 # HOW TO PLAY
 
 Compile using "make". Execute base game (without DLC) using "./cc3k".
 
 ### SAMPLE IMAGES
-![start](https://github.com/msbukal/cc3k/blob/master/sample_images/1-start.JPG?raw=true)
-![spawn](https://github.com/msbukal/cc3k/blob/master/sample_images/2-spawn.JPG?raw=true)
-![attack](https://github.com/msbukal/cc3k/blob/master/sample_images/3-attack.JPG?raw=true)
-![death](https://github.com/msbukal/cc3k/blob/master/sample_images/4-death.JPG?raw=true)
+![spawn](/sample_images/2-spawn.JPG)
+
+More can be found [here](/sample_images)
 
 ### COMMANDS
 
