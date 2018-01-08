@@ -5,7 +5,9 @@ The goal of the game is to reach the bottom of the dungeon.
 # OVERVIEW
 
 Kevin (kkqzhou)- Floor Implementation, Object Generation, Player Interaction
+
 Milena (msbukal)- Abstract superclasses: Subject, Character, Player, Enemy and Potion along with all concrete subclasses and class Gold
+
 Pascal (p35nguye)- Plan of Attack, UML Diagram, Keybinding DLC
 
 # UML DIAGRAM
@@ -24,6 +26,7 @@ Compile using "make". Execute base game (without DLC) using "./cc3k".
 ### COMMANDS
 
 Game demands player race or quits (q or EOF). A valid race shortform will start game with that race.
+
 Player can input commands, and at each command the board is redrawn:
 - no, so, ea, we, ne, nw, se, sw: to move player one block in cardinal direction
 - u <direction>: uses the potion in direction
@@ -66,7 +69,9 @@ Enemy Races:
 | Halfling | L | 100 | 15 | 20 | 50% that player misses in combat |
 
 Other than Humans, Dragons and Merchants, enemies will drop either a small or normal pile of gold.
+
 Other than Dragons, enemies move randomly 1 tile at a time (to empty tiles). Enemies can not leave their birth room. Movement is done starting at leftmost enemy in a row.
+
 If a human is within a 1 block radius of an enemy, it will attack. (Merchants only if angered).
 
 ### ITEMS
@@ -91,7 +96,9 @@ Consists of gold in certain piles:
 - Dragon hoard (value 6)
 
 Dragon hoard protected by a dragon and can only be picked up once dragon is slain.
+
 Gold is denoted on map with a G. 
+
 Gold dropped by merchant (4) or human (2x2) are only picked up after player walks over.
 
 ### FLOORS
@@ -106,14 +113,15 @@ Each floor has:
 When player moves onto a stairway, the next level is generated.
 
 ### COMBAT
-COMBAT
 All enemies except Merchant and Dragon are hostile. Hostile enemies will attempt to attack the player when they are within a 1 block radius, before player can attack. 
+
 Dragon will attack only if player is in a 1 block radius of the dragon hoard. Merchants attack back if attacked and other merchants will become hostile.
 
 If player is not within radius, enemies resume random movement.
 
 # KEYBIND DLC
 We decided that typing in commands for movement and actions was far too inconvenient for users. As such, we decided to implement keyboard controls using getch, removing the need to press “enter” every time the user wants to perform an action in-game. Looking into various methods for keybinding, we initially opted to use the ncurses library; however, this proved to be incompatible with our method of rendering the map using cout. As such, we used a custom getch function using getchar and termios to turn echo off. 
+
 To compile with dlc, execute "./cc3k -dlc" after make
 
 The commands that change are:
